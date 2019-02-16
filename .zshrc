@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="mrtazz"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -39,7 +39,7 @@ ZSH_THEME="agnoster"
  ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -55,14 +55,14 @@ ZSH_THEME="agnoster"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+# ZSH_CUSTOM=/home/totious/.ho-my-zsh/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wiselyexport MANPATH="/usr/local/man:$MANPATH"
-plugins=(git  archlinux ruby rails python command-not-found zsh-completions gitfast nanoc tmux colored-man-pages z)
+plugins=(git archlinux extract ruby rails python command-not-found zsh-completions npm rvm gitfast nanoc tmux colored-man-pages z)
 
 
 # You may need to manually set your language environment
@@ -100,28 +100,6 @@ autoload -U run-help
 autoload run-help-git
 autoload run-help-svn
 autoload run-help-svk
-alias help=run-help
-alias sudo=sudo 
-alias nah=clear 
-alias cya=exit
 
-alias vyvanse='yay -Syyuu'
-alias redpill='cmatrix -b' 
-alias cocky=peaclock
-
-alias brag='toilet Hi Anon'
-alias humble='banner Hello Anon'
-alias bump='cava | lolcat'
-alias pump='glava'
-alias eye1=gotop
-alias eye2=htop 
-alias sexy='neofetch -b'
-
-alias yummy='yay -S'
-alias yucky='yay -Rs'
-alias beast='ranger'
-alias wutang='cmus'
-alias adderall=yay
-
-
+source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
