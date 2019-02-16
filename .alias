@@ -1,41 +1,30 @@
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
-neofetch
-
-# ls after cd
-function cd {
-    builtin cd "$@" && ls -G
-}
-
-autoload -U run-help
-autoload run-help-git
-autoload run-help-svn
-autoload run-help-svk
+# The Basics
 alias help=run-help
 alias sudo=sudo 
 alias nah=clear 
 alias cya=exit
 
+# POWER Aliases
 alias vyvanse='yay -Syyuu'
-alias redpill='cmatrix -b' 
-alias cocky=peaclock
+alias adderall=yay
+alias yummy='yay -S'
+alias yucky='yay -Rs'
 
+# Terminal Ricing
 alias brag='toilet Hi Anon'
 alias humble='banner Hello Anon'
 alias bump='cava | lolcat'
 alias pump='glava'
+
+# Process Management
 alias eye1=gotop
 alias eye2=htop 
 alias sexy='neofetch -b'
 
-alias yummy='yay -S'
-alias yucky='yay -Rs'
+# Aliases for Programs/Software
 alias beast='ranger'
-alias wutang='cmus'
-alias adderall=yay
+alias toonz='cmus'
+alias redpill='cmatrix -b' 
+alias cocky=peaclock
+
+
